@@ -58,7 +58,23 @@
 
      		* For applications that are heavy in nature, therefore, require a lot of RAM.
 		  E.g. when your system needs a lot of applications running in background i.e multitasking.
+	
+	* Storage Instances
 
+     		* For applications that are huge in size or have a data set that occupies a lot of space.
+		  E.g. when your application is of huge size.
+
+	* GPU Instances
+
+     		* For applications that require some heavy graphics rendering.
+		  E.g. 3D modelling etc.
+
+# Now, every instance type has a set of instances which are optimized for different workloads
+
+* General Instances
+	* t2
+	* m4
+	* m3
 
 
 	
