@@ -53,11 +53,13 @@
 
      		* For applications that require a lot of processing from the CPU.
 		  E.g. Analysis of data from a stream of data, like Twitter stream.
-	
+
 	* Memory Instances
-		
-		* For applications that are heavy in nature, therefore, require a lot of RAM.
-		  E.g. when your system needs a lot of applications running in background i.e multitasking
+
+     		* For applications that are heavy in nature, therefore, require a lot of RAM.
+		  E.g. when your system needs a lot of applications running in background i.e multitasking.
+
+
 
 	
 	
