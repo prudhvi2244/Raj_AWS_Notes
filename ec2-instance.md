@@ -76,6 +76,23 @@
 	* m4
 	* m3
 
+* Compute Instances
+	* c4
+	* c3
+
+* Memory Instances
+	* r3
+	* x1
+
+* Storage Instances
+	* i2
+	* d2
+
+* GPU Instances
+	* g2
+
+
+
 
 	
 	
