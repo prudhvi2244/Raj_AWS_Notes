@@ -22,5 +22,6 @@
 * modify context.xml and comment <Valve> tag
 
 	* >cd conf/
+
 * modify tomcat-users.xml file with role as "manager-gui"
 
