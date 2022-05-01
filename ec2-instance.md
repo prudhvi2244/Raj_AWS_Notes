@@ -51,6 +51,6 @@
 
 	* Compute Instances
 	
-	    # For applications that require a lot of processing from the CPU.
+	    * For applications that require a lot of processing from the CPU.
 	      E.g. Analysis of data from a stream of data, like Twitter stream.
 
