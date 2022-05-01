@@ -44,6 +44,7 @@
   Therefore, AWS EC2 offers 5 types of instances which are as follows:
     
 	* General Instances
+
      	    * For applications that require a balance of performance and cost.
 	    * E.g. email responding systems, where we need a prompt response as well as
 			  that it should be cost effective,since it doesn't require much processing.
