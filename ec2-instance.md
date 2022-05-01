@@ -1,5 +1,5 @@
 # Amazon EC2 (Elastic Compute Cloud)
-===================================
+
 * Amazon Elastic Compute Cloud is a part of Amazon cloud-computing platform, Amazon Web Services,
  that allows users to rent virtual computers on which to run their own computer applications.
 
