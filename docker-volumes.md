@@ -58,6 +58,58 @@
 * Then, check to verify the volume was successfully mounted by listing the content of the container:
 	* ls
 
+# Mounting a Host Directory as a Data volume
+
+* You can also mount an existing directory from the host machine to a container. This type of volume is called Host Volumes.
+* You can mount host volumes by using the -v flag and specifying the name of the host directory.
+
+* Everything within the host directory is then available in the container. What’s more, all the 
+  data generated inside the container and placed in the data volume is safely stored on the host
+  directory.
+
+* The basic syntax for mounting a host directory is:
+	* docker run -v "$(pwd)":<volume_name> <docker_image>
+	* docker run -v "%cd%":<volume_name> <docker_image> ( for windows )
+
+* The "$(pwd)" attribute instructs Docker to mount the directory the user is currently in.
+
+* First, create a sample directory on the host under the name tmp and move into it:
+	* mkdir temp
+	* cd temp
+
+*  Once inside the directory, create a test file to see whether it will be available from the
+   container:
+	* touch file.txt
+
+* Then, use the docker run command to launch an Ubuntu container with the host directory attached to it:
+	* docker run -it -v "$(pwd)":/data1 ubuntu
+
+
+* This launches the container in interactive mode and mounts a volume under the name data1.
+
+* List the content of the container and verify there is a data1 directory:
+	* ls
+
+* Open the mounted directory and list the content. The output should display the file you created on the host:
+	* cd data1
+	* ls
+
+# How to Delete Docker Volumes
+* To delete a Docker volume, you need to specify its name.
+* The basic syntax for removing a Docker volume in the command line is:
+	* docker volume rm <volume_name>
+
+
+* Docker removes volumes only if they are not in use at the moment. If there is a container with the specified volume, it responds with an error. To proceed, stop and remove the container and then rerun the docker volume rm command.
+
+
+# How to Delete All Volumes at Once
+
+* To delete all unused Docker volumes with a single command:
+	* docker volume prune -f
+
+
+
 
 
 
