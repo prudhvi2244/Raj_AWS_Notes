@@ -14,7 +14,51 @@
 
 # How to Create a Docker Volume
 * To create a Docker Volume use the command:
+	* docker volume create <volume_name>
 
-	* docker volume create [volume_name]
+* Docker automatically creates a directory for the volume on the host under the
+  /var/lib/docker/volume/ path. You can now mount this volume on a container, ensuring data
+  persistence and data sharing among multiple containers.
+
+# List Docker Volumes
+* To verify you have successfully created a Docker volume, prompt Docker to list all available volumes with:
+	* docker volume list
+
+# Inspecting Docker Volumes
+* To see more information about a Docker volume, use the inspect command
+	* docker volume inspect <volume_name>
+
+
+* It lists details of a volume, including its location on the host file (Mountpoint). Everything 
+  stored within the data volume can also be found in the directory listed under the mountpoint path
+
+
+
+# Mounting a Data Volume
+* To mount a data volume to a container add the --mount flag to the docker run command. It adds 
+  the volume to the specified container, where it stores the data produced inside the virtual 
+  environment.
+
+* To run a container and mount a data volume to it, follow the basic syntax:
+	* docker run --mount source=<volume_name>,destination=<path_in_container> <docker_image>
+
+
+* Replace <path_in_container> with the path where you want to place the data volume in the 
+  container. Everything stored in that directory automatically gets saved on the data volume on the
+  host as well.
+
+* For example, to launch an Ubuntu container and mount the data volume to it, run:
+	* docker run -it --name=example1 --mount source=data,destination=/data ubuntu
+
+
+* The command instructs Docker to run a container in interactive mode (-it) from the Ubuntu image,
+  under the name example1, while mounting the volume data in the /data directory inside the
+  container.
+
+* Then, check to verify the volume was successfully mounted by listing the content of the container:
+	* ls
+
+
+
 
 
