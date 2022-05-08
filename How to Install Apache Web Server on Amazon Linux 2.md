@@ -2,6 +2,8 @@
 
 * Linux 2: Linux 2 is a very very popular linux AMI provided by AWS itself and also free tier eligible.
 * Apache Web Server: Apache web server is one of the most used web server when it comes to serving web content online. It is open source and easy to setup.
+# 
+
 * Update latest package available on the system
 
 	* sudo yum update -y
@@ -35,4 +37,4 @@
 
 	* sudo systemctl disable httpd.service
 
-* 
+
