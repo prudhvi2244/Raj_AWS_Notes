@@ -13,7 +13,9 @@
 
 # Public Subnet
 
+* If a subnet's traffic is routed to an internet gateway, the subnet is known as a public subnet.
 * Use public subnet for the resources that must be connected to the internet.
+
 
 # Private Subnet
 
@@ -28,6 +30,18 @@
   block for our VPC.
 
 
+* In a particular AWS Region we can have 5 VPC
+* Within Particula VPC we can create 200 subnets
+* We can have 5 IP address CIDR Block (1 primary and 4 Secodary) assigned to VPC
+* VPC spans all the availability zones in the region.
+* After creating a VPC, you can add one or more subnets in each availability zone.
+* Each subnet must reside entirely within one Availability Zone and cannot span zones.
+* Availability Zone is nothing but AWS Data Center
+
+* internet gateway enables communication over the internet
+* Virtual Private Network (VPN) connection enables communication with your corporate network.
+* NAT ( Network Address Translation ) Gateway is a highly available AWS managed service that makes it easy to connect to the
+  Internet from instances within a private subnet in an Amazon Virtual Private Cloud (Amazon VPC).
 
 
 
